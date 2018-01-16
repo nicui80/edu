@@ -48,23 +48,29 @@
 }
 .mui-content .mui-segmented-control.mui-segmented-control-inverted.mui-segmented-control-vertical .mui-control-item{
 	border-bottom:none;
+	color:#444444;
 }
-.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+.mui-content .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
 	background-color: #f6f6f6;
+	color:#007aff;
 }
 .mui-table-view{
 	background-color: #f6f6f6;
 }
 .mui-table-view-cell{
-	font-size:15px;
+	font-size:14px;
 	padding:0px 15px;
 	line-height: 50px;
+	color:#444;
 }
 .mui-table-view-cell.mui-active{
 	background-color:#fff;
 	color: #007aff;
 }
 .mui-table-view-cell:after{
+	background-color:transparent;
+}
+.mui-table-view:before{
 	background-color:transparent;
 }
 .mui-control-content.mui-active{

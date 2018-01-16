@@ -16,6 +16,9 @@
 		"email": "",/*开发者邮箱地址*/
 		"url": "http://www.dcloud.io"
 	},
+	"google": {       
+       "hardwareAccelerated":true
+    },
 	"permissions": {
 		"Accelerometer": {
             "description": "访问加速度感应器"
@@ -108,6 +111,7 @@
 			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
 			"waiting": true
 		},
+		"allowsInlineMediaPlayback": true,
 		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
 		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
 		"distribute": {
@@ -188,6 +192,36 @@
 					"xxhdpi": ""
 				}
 			}
+		}
+	},
+	"dependencies":{
+		"pages": {
+			"index.html": {
+				"href": "index.html",
+				"resources": [
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"html/nav.html",
+				"js/nav.js",
+				"css/nav.css",
+				"css/mui.css",
+				"js/last.js",
+				"html/last.html",
+				"css/last.css",
+				"css/video-js.min.css",
+				"css/common.css",
+				"js/video.min.js",
+				"js/mui.js",
+				"js/flexible.js",
+				"images/before.jpg"
+			]
 		}
 	}
 }

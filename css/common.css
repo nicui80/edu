@@ -1,0 +1,30 @@
+body,div,ul,ol,li,span,p,i,input,img,h1,h2,h3,h4,h5,h6{
+    margin:0;
+    padding:0;
+    font-family:PingFangSC-Regular,MicrosoftYaHei,Heiti SC,Helvetica;
+}
+table{
+  border-collapse:collapse;
+}
+input[type="button"], input[type="submit"], input[type="reset"] {
+-webkit-appearance: none;
+}
+
+textarea {-webkit-appearance: none;} 
+header, section, footer, aside, nav, article, figure{display:block;}
+ul,ol,li{ list-style:none;}
+input {outline:none; border:none;}
+a{text-decoration:none;}
+a,button,input,optgroup,select,textarea {
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.clearfix:after{ 
+    content:""; 
+    height:0;  
+    visibility:hidden; 
+    display:block;
+    clear:both; 
+}
+.clearfix{display:inline-block;}
+*html .clearfix{height:1%;} 
+.clearfix{display:block;}
